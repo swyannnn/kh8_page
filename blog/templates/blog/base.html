@@ -25,10 +25,16 @@
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
-            <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+            <!-- <div class="navbar-nav mr-auto"> -->
+              <div class="dropdown">
+                <span>Mouse over me</span>
+                <div class="dropdown-content">
+                <p>Hello World!</p>
+                </div>
+              </div>
+              <!-- <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
               <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
-              <a class="nav-item nav-link" href="{% url 'blog-major' %}">Major</a>
+              <a class="nav-item nav-link" href="{% url 'blog-major' %}">Major</a> -->
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
