@@ -26,9 +26,19 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
-              <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
-              <a class="nav-item nav-link" href="{% url 'blog-major' %}">Major</a>
+              <div class="dropdown">
+                <button class="nav-link" style="background-color: transparent; border: transparent;">Maths</button>
+                  <div class="dropdown-content">
+                    <ul style="list-style-type: none; padding: 0;">
+                      <li><a href="#">Joseph Tan</a></li>
+                      <li><a href="#">Test1</a></li>
+                      <li><a href="#">swyannnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</a></li>
+                    </ul>
+                  </div>
+              </div>
+                
+              <button class="dropdown nav-link" style="background-color: transparent; border: transparent;">Economics</button>
+              <button class="dropdown nav-link" style="background-color: transparent; border: transparent;">Law</button>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
