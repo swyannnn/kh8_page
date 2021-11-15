@@ -1,0 +1,33 @@
+h1{
+    padding-top: 30px;
+    text-align: center;
+}
+
+h3{
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.breakline {
+    width: 80%;
+    max-width: 720px;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #cacaca;
+    content: "";
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.personal-statement-wrap p{
+    line-height: 40px;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
