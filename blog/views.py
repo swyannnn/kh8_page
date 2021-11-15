@@ -7,5 +7,5 @@ def home(request):
 def about(request):
     return render (request, 'blog/about.html', {'title': 'About'})
 
-def major(request):
-    return render (request, 'blog/major.html', {'title': 'Major'})
+def josephtan(request):
+    return render (request, 'blog/josephtan.html', {'title': 'Major'})
