@@ -8,4 +8,4 @@ def about(request):
     return render (request, 'blog/about.html', {'title': 'About'})
 
 def josephtan(request):
-    return render (request, 'blog/josephtan.html', {'title': 'Major'})
+    return render (request, 'blog/josephtan.html', {'title': 'Joseph Tan'})
