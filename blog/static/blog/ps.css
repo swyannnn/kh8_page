@@ -1,3 +1,7 @@
+/*
+ps.css is used in personal statement pages. Add {% load static %} to the personal statement pages.
+*/
+
 h1{
     padding-top: 30px;
     text-align: center;
