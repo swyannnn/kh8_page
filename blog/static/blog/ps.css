@@ -1,7 +1,6 @@
 /*
 ps.css is used in personal statement pages. Add {% load static %} to the personal statement pages.
 */
-
 h1{
     padding-top: 30px;
     text-align: center;
@@ -28,6 +27,7 @@ hr {
 }
 
 .personal-statement-wrap p{
+    font-family: Garamond, serif; 
     line-height: 40px;
     width: 60%;
     margin: auto;

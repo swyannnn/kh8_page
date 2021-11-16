@@ -102,7 +102,7 @@ a.article-title:hover {
   padding: 0px 16px;
   text-decoration: none;
   display: inline-block;
-  min-width: fit-content;
+  min-width: 110px;
   block-size: fit-content;
 }
 
