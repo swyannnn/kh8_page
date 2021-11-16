@@ -13,7 +13,7 @@ h3{
     text-align: center;
 }
 
-.breakline {
+hr {
     width: 80%;
     max-width: 720px;
     height: 5px;
