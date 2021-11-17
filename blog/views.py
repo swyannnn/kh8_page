@@ -9,3 +9,6 @@ def about(request):
 
 def josephtan(request):
     return render (request, 'blog/josephtan.html', {'title': 'Joseph Tan'})
+
+def mindyliew(request):
+    return render (request, 'blog/mindyliew.html', {'title': 'Mindy Liew'})

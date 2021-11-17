@@ -101,9 +101,10 @@ a.article-title:hover {
   color: black;
   padding: 0px 16px;
   text-decoration: none;
-  display: inline-block;
-  min-width: 110px;
-  block-size: fit-content;
+}
+
+.dropdown-content li{
+  width: max-content;
 }
 
 .dropdown-content a:hover{

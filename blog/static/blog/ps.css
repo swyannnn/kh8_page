@@ -1,6 +1,14 @@
 /*
 ps.css is used in personal statement pages. Add {% load static %} to the personal statement pages.
 */
+
+@font-face {
+    font-family: eurostyle;
+    src: url(textfont/EurostileOblique.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1{
     padding-top: 30px;
     text-align: center;
@@ -27,7 +35,7 @@ hr {
 }
 
 .personal-statement-wrap p{
-    font-family: Garamond, serif; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     line-height: 40px;
     width: 60%;
     margin: auto;
