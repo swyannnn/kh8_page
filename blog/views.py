@@ -1,4 +1,3 @@
-from typing import ContextManager
 from django.shortcuts import render
 posts = [
     {
