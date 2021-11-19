@@ -15,6 +15,7 @@ joseph_posts = [
     }
 ]
 #this is a comment 
+#this is another comment!
 def home(request):
     return render (request, 'blog/home.html')
 
