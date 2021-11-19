@@ -14,7 +14,7 @@ joseph_posts = [
         'content2': 'In secondary school, I joined an olympiad team. At that time, I made a few friends who are also passionate about mathematics. We would often stay after school discussing olympiad questions or learning new concepts in mathematics. Subsequently, I got a high distinction in a local olympiad competition. I gained huge confidence from this achievement, for this reason, I am motivated to continue my studies and research in mathematics.'
     }
 ]
-
+#this is a comment 
 def home(request):
     return render (request, 'blog/home.html')
 
