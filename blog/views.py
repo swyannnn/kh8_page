@@ -61,3 +61,4 @@ def test(request):
         'posts': test_posts
     }
     return render (request, 'blog/test.html', context)  
+
