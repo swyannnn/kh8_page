@@ -1,29 +1,21 @@
 {% extends "blog/base.html" %}
 {% load static %}
 {% block content %}
-
-    <link rel="stylesheet" href="{% static 'blog/ps.css' %}">
-
-    <div data-aos="fade-in" data-aos-duration="2000">
-        <h1>Law personal statement (Mindy Liew)</h1>
-
-        <h3>
-            Mindy Liew is not in a university yet. She is enjoying her time with some certain guy but I have no idea who he is. Oh I think its Eth-
-        </h3>
-        <hr>
-    </div>
-
-    <div class="personal-statement-wrap">
-        <p data-aos="fade-right" data-aos-duration="1000">The existence and evolution of law are intrinsically tied to the concept of equality. Yet, its ability to enshrine equality, and uphold notions of justice, are often frustrated across our increasingly complex and diverse societies. As a citizen of multicultural Malaysia, it is easy to observe that intra-ethnic disparities continue to be a sensitive and divisive issue. Arguably, it is a nation where it is seen that not everyone has the same access to principles of equality and justice. </p>
-
-        <p data-aos="fade-right" data-aos-duration="1000">My interest in how the law interprets ‘equality’ stemmed from Malaysia’s controversial matriculation programme intake quota as a realisation of Article 153 of the Federal Constitution. The preferential treatment for a particular racial-religious group at the expense of others has proved a taboo in a nation with long-held racial tensions. Furthermore, this Article has found protection under the Sedition Act making explicit criticism of it illegal. Thus, the way in which the law has been used to protect the privilege of some over others calls into question the malleability and adaptability of law in the face of race, religion and political variables. While efforts have been made to thwart present dissidence towards this issue, all have failed to present a legal challenge that can be heard. </p>
-
-        <p data-aos="fade-right" data-aos-duration="1000">Equipped with a contextual understanding of historical events, I enjoy visualising the intersectionality of law by drawing upon examples of different historical accounts. However, we no longer live in such times, and this raises questions about when and how should the law be reviewed and evolved to ensure that it protects the freedoms and opportunities of all people. For example, the overarching effects of Asian conservatism in law and international politics is one that I have studied extensively. Much like the application of democracy, I have learned that the progression of law can only be ratified under the pretence of international agreement and collaboration. In addition, the essential need for clear and accessible use of language, and how that is interpreted and applied in law also interests me greatly; especially in terms of the proper use, accessibility and coherence of law towards all of society’s individuals. Through my A-Level English Literature studies, I was struck by Atwood’s portrayal of the law’s manipulation by those with power in The Handmaid’s Tale. </p>
-
-        <p data-aos="fade-right" data-aos-duration="1000">I have a real passion for Literature, Geography, Politics and History. Thus, the study of law seems the next logical step in my educational journey. During my time at King Henry VIII College, I received the school English and Geography Awards as recognition for my outstanding performances and attainment in these subject areas. I also ensure that I follow through with meaningful actions to give expression to the goals I feel strongly about. For example, as an active youth advocate, I volunteer for a women’s community organisation in its efforts to empower young women through workshops and talks. I am currently the Secretary-General of my school’s Model United Nations club and have led our team of students through many memorable conferences. My work with a local theatre collective has also encouraged the growth of my debating and public speaking skills. </p>
-
-        <p data-aos="fade-right" data-aos-duration="1000">As a student who has always enjoyed academic success, and has high ambitions, the UK has always been the Elysium of my educational hopes. Most of all, I hope to return home having excelled in my legal studies abroad to help contribute to making Malaysia a more equal and just society. After all, Aristotle is credited with having once said “The only stable state is the one in which all men are equal before the law.” I believe that the only way that will ever come about is if young people like myself dedicate themselves to the legal profession.</p>
-    </div>
-
-    <hr>
-{% endblock %}
+{% for post in posts %}
+<article>
+  <link rel="stylesheet" href="{% static 'blog/ps.css' %}">
+  <div class="personal-statement-wrap">
+      <div class="article-metadata">
+        <div data-aos="fade-in" data-aos-duration="2000">
+          <h1>{{ post.intro }}</h1>
+          <h3>{{ post.description }}</h3>
+          <hr>
+        </div>
+      </div>
+      {% for paragraph in post.content %}
+      <p data-aos="fade-right" data-aos-duration="1000">{{ paragraph }}</p>
+      {% endfor %}
+  </div>
+</article>
+{% endfor %}
+{% endblock content %}
