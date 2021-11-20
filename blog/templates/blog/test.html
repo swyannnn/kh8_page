@@ -1,15 +1,21 @@
 {% extends "blog/base.html" %}
+{% load static %}
 {% block content %}
-    {% for post in posts %}
-        <article>
-          <div class="personal-statement-wrap">
-            <div class="article-metadata">
-              <a class="mr-2" href="#">{{ post.intro }}</a>
-              <small class="text-muted">{{ post.date_posted }}</small>
-            </div>
-            <h2><a class="article-title" href="#">{{ post.description }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
-          </div>
-        </article>
-    {% endfor %}
+{% for post in posts %}
+<article>
+  <link rel="stylesheet" href="{% static 'blog/ps.css' %}">
+  <div class="personal-statement-wrap">
+      <div class="article-metadata">
+        <div data-aos="fade-in" data-aos-duration="2000">
+          <h1>{{ post.intro }}</h1>
+          <h3>{{ post.description }}</h3>
+          <hr>
+        </div>
+      </div>
+      {% for paragraph in post.content %}
+      <p data-aos="fade-right" data-aos-duration="1000">{{ paragraph }}</p>
+      {% endfor %}
+  </div>
+</article>
+{% endfor %}
 {% endblock content %}
